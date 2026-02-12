@@ -14,7 +14,7 @@ Schema for error response from usergroups.users.list method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error84`](../../doc/models/error-84.md) | Required | - |
+| `error` | [`UsergroupsEnableErrorEnum`](../../doc/models/usergroups-enable-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

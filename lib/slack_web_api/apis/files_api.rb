@@ -47,8 +47,7 @@ module SlackWebApi
     # `next_cursor` attribute returned by the previous request's
     # `response_metadata`. This parameter is optional, but pagination is
     # mandatory: the default value simply fetches the first "page" of the
-    # collection of comments. See [pagination](/docs/pagination) for more
-    # details.
+    # collection of comments.
     # @return [ApiResponse] Complete http response with raw body and status code.
     def files_info(token: nil,
                    file: nil,

@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.delete
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error3`](../../doc/models/error-3.md) | Required | - |
+| `error` | [`AdminConversationsDeleteErrorEnum`](../../doc/models/admin-conversations-delete-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -14,7 +14,7 @@ module SlackWebApi
     attr_accessor :callstack
 
     # TODO: Write general description for this method
-    # @return [Error92]
+    # @return [UsersInfoErrorEnum]
     attr_accessor :error
 
     # TODO: Write general description for this method

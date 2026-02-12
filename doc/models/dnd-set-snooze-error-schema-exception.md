@@ -14,7 +14,7 @@ Schema for error response from dnd.setSnooze method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error53`](../../doc/models/error-53.md) | Required | - |
+| `error` | [`DndSetSnoozeErrorEnum`](../../doc/models/dnd-set-snooze-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

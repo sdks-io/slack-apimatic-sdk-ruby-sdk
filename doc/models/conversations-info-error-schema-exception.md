@@ -14,7 +14,7 @@ Schema for error response from conversations.info method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error34`](../../doc/models/error-34.md) | Required | - |
+| `error` | [`ConversationsInfoErrorEnum`](../../doc/models/conversations-info-error-enum.md) | Required | - |
 | `needed` | `String` | Optional | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `provided` | `String` | Optional | - |

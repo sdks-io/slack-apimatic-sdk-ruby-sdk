@@ -14,7 +14,7 @@ Schema for error response from reactions.remove method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error68`](../../doc/models/error-68.md) | Required | - |
+| `error` | [`ReactionsRemoveErrorEnum`](../../doc/models/reactions-remove-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

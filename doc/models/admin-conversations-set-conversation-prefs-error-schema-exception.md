@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.setConversationPrefs
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error10`](../../doc/models/error-10.md) | Required | - |
+| `error` | [`AdminConversationsSetConversationPrefsErrorEnum`](../../doc/models/admin-conversations-set-conversation-prefs-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -14,7 +14,7 @@ Schema for error response from reactions.list method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error67`](../../doc/models/error-67.md) | Required | - |
+| `error` | [`ReactionsListErrorEnum`](../../doc/models/reactions-list-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

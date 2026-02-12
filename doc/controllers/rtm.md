@@ -26,8 +26,8 @@ def rtm_connect(token,
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `token` | `String` | Query, Required | Authentication token. Requires scope: `rtm:stream` |
-| `batch_presence_aware` | `TrueClass \| FalseClass` | Query, Optional | Batch presence deliveries via subscription. Enabling changes the shape of `presence_change` events. See [batch presence](/docs/presence-and-status#batching). |
-| `presence_sub` | `TrueClass \| FalseClass` | Query, Optional | Only deliver presence events when requested by subscription. See [presence subscriptions](/docs/presence-and-status#subscriptions). |
+| `batch_presence_aware` | `TrueClass \| FalseClass` | Query, Optional | Batch presence deliveries via subscription. Enabling changes the shape of `presence_change` events. |
+| `presence_sub` | `TrueClass \| FalseClass` | Query, Optional | Only deliver presence events when requested by subscription |
 
 ## Requires scope
 

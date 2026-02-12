@@ -14,7 +14,7 @@ Schema for error response from conversations.open method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error43`](../../doc/models/error-43.md) | Required | - |
+| `error` | [`ConversationsOpenErrorEnum`](../../doc/models/conversations-open-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

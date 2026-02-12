@@ -348,10 +348,10 @@ module SlackWebApi
       @workflows ||= WorkflowsApi.new @global_configuration
     end
 
-    # Access to o_auth_authorization controller.
-    # @return [OAuthAuthorizationApi] Returns the controller instance.
-    def o_auth_authorization
-      @o_auth_authorization ||= OAuthAuthorizationApi.new @global_configuration
+    # Access to oauth_authorization controller.
+    # @return [OauthAuthorizationApi] Returns the controller instance.
+    def oauth_authorization
+      @oauth_authorization ||= OauthAuthorizationApi.new @global_configuration
     end
 
     def initialize(
@@ -395,7 +395,7 @@ module SlackWebApi
       @auth_managers = {}
       http_client_config = global_config.client_configuration
       %w[slackAuth].each { |auth| @auth_managers[auth] = nil }
-      @auth_managers['slackAuth'] = OAuth2.new(
+      @auth_managers['slackAuth'] = Oauth2.new(
         http_client_config.authorization_code_auth_credentials, global_config
       )
     end

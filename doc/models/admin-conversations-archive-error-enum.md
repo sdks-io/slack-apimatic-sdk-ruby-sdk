@@ -1,0 +1,20 @@
+
+# Admin Conversations Archive Error Enum
+
+## Enumeration
+
+`AdminConversationsArchiveErrorEnum`
+
+## Fields
+
+| Name |
+|  --- |
+| `FEATURE_NOT_ENABLED` |
+| `CHANNEL_NOT_FOUND` |
+| `CHANNEL_TYPE_NOT_SUPPORTED` |
+| `DEFAULT_ORG_WIDE_CHANNEL` |
+| `ALREADY_ARCHIVED` |
+| `CANT_ARCHIVE_GENERAL` |
+| `RESTRICTED_ACTION` |
+| `COULD_NOT_ARCHIVE_CHANNEL` |
+

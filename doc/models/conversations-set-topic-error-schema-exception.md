@@ -14,7 +14,7 @@ Schema for error response from conversations.setTopic method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error46`](../../doc/models/error-46.md) | Required | - |
+| `error` | [`ConversationsSetPurposeErrorEnum`](../../doc/models/conversations-set-purpose-error-enum.md) | Required | - |
 | `needed` | `String` | Optional | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `provided` | `String` | Optional | - |

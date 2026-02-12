@@ -46,10 +46,10 @@ Values provided through arguments take precedence over those defined in environm
 ```ruby
 ENVIRONMENT='production'
 
-O_AUTH_CLIENT_ID='oAuthClientId'
-O_AUTH_CLIENT_SECRET='oAuthClientSecret'
-O_AUTH_REDIRECT_URI='oAuthRedirectUri'
-O_AUTH_SCOPES=READ,WRITE
+OAUTH_CLIENT_ID='oauthClientId'
+OAUTH_CLIENT_SECRET='oauthClientSecret'
+OAUTH_REDIRECT_URI='oauthRedirectUri'
+OAUTH_SCOPES=READ,WRITE
 
 LOG_LEVEL=Debug
 MASK_SENSITIVE_HEADERS=true

@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.unarchive
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error11`](../../doc/models/error-11.md) | Required | - |
+| `error` | [`AdminConversationsUnarchiveErrorEnum`](../../doc/models/admin-conversations-unarchive-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

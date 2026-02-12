@@ -14,7 +14,7 @@ module SlackWebApi
     attr_accessor :callstack
 
     # Note: PHP callstack is only visible in dev/qa
-    # @return [Error82]
+    # @return [UsergroupsCreateErrorEnum]
     attr_accessor :error
 
     # Note: PHP callstack is only visible in dev/qa

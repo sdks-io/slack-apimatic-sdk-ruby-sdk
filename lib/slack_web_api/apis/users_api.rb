@@ -24,8 +24,7 @@ module SlackWebApi
     # @param [String] cursor Optional parameter: Paginate through collections of
     # data by setting the `cursor` parameter to a `next_cursor` attribute
     # returned by a previous request's `response_metadata`. Default value
-    # fetches the first "page" of the collection. See
-    # [pagination](/docs/pagination) for more detail.
+    # fetches the first "page" of the collection.
     # @return [ApiResponse] Complete http response with raw body and status code.
     def users_conversations(token: nil,
                             user: nil,
@@ -173,8 +172,7 @@ module SlackWebApi
     # @param [String] cursor Optional parameter: Paginate through collections of
     # data by setting the `cursor` parameter to a `next_cursor` attribute
     # returned by a previous request's `response_metadata`. Default value
-    # fetches the first "page" of the collection. See
-    # [pagination](/docs/pagination) for more detail.
+    # fetches the first "page" of the collection.
     # @param [TrueClass | FalseClass] include_locale Optional parameter: Set
     # this to `true` to receive the locale for users. Defaults to `false`
     # @return [ApiResponse] Complete http response with raw body and status code.

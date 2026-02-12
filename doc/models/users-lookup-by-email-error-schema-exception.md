@@ -14,7 +14,7 @@ Schema for error response from users.lookupByEmail method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error94`](../../doc/models/error-94.md) | Required | - |
+| `error` | [`UsersLookupByEmailErrorEnum`](../../doc/models/users-lookup-by-email-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

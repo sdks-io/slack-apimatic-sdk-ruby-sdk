@@ -14,7 +14,7 @@ Schema for error response from reminders.add method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error69`](../../doc/models/error-69.md) | Required | - |
+| `error` | [`RemindersAddErrorEnum`](../../doc/models/reminders-add-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

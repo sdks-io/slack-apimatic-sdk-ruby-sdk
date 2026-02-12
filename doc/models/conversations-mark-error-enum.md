@@ -1,0 +1,31 @@
+
+# Conversations Mark Error Enum
+
+## Enumeration
+
+`ConversationsMarkErrorEnum`
+
+## Fields
+
+| Name |
+|  --- |
+| `METHOD_NOT_SUPPORTED_FOR_CHANNEL_TYPE` |
+| `MISSING_SCOPE` |
+| `CHANNEL_NOT_FOUND` |
+| `INVALID_TIMESTAMP` |
+| `NOT_IN_CHANNEL` |
+| `NOT_AUTHED` |
+| `INVALID_AUTH` |
+| `ACCOUNT_INACTIVE` |
+| `INVALID_ARG_NAME` |
+| `INVALID_ARRAY_ARG` |
+| `INVALID_CHARSET` |
+| `INVALID_FORM_DATA` |
+| `INVALID_POST_TYPE` |
+| `MISSING_POST_TYPE` |
+| `INVALID_JSON` |
+| `JSON_NOT_OBJECT` |
+| `REQUEST_TIMEOUT` |
+| `UPGRADE_REQUIRED` |
+| `NOT_ALLOWED_TOKEN_TYPE` |
+

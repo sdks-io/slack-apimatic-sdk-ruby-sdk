@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.convertToPrivate
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error1`](../../doc/models/error-1.md) | Required | - |
+| `error` | [`AdminConversationsConvertToPrivateErrorEnum`](../../doc/models/admin-conversations-convert-to-private-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -9,15 +9,15 @@ Documentation for accessing and setting credentials for slackAuth.
 
 | Name | Type | Description | Getter |
 |  --- | --- | --- | --- |
-| OAuthClientId | `String` | OAuth 2 Client ID | `o_auth_client_id` |
-| OAuthClientSecret | `String` | OAuth 2 Client Secret | `o_auth_client_secret` |
-| OAuthRedirectUri | `String` | OAuth 2 Redirection endpoint or Callback Uri | `o_auth_redirect_uri` |
-| OAuthToken | `OAuthToken` | Object for storing information about the OAuth token | `o_auth_token` |
-| OAuthScopes | `Array[OAuthScope]` | List of scopes that apply to the OAuth token | `o_auth_scopes` |
+| OAuthClientId | `String` | OAuth 2 Client ID | `oauth_client_id` |
+| OAuthClientSecret | `String` | OAuth 2 Client Secret | `oauth_client_secret` |
+| OAuthRedirectUri | `String` | OAuth 2 Redirection endpoint or Callback Uri | `oauth_redirect_uri` |
+| OAuthToken | `OauthToken` | Object for storing information about the OAuth token | `oauth_token` |
+| OAuthScopes | `Array[OauthScope]` | List of scopes that apply to the OAuth token | `oauth_scopes` |
 
 
 
-**Note:** Auth credentials can be set using named parameter for any of the above credentials (e.g. `o_auth_client_id`) in the client initialization.
+**Note:** Auth credentials can be set using named parameter for any of the above credentials (e.g. `oauth_client_id`) in the client initialization.
 
 ## Usage Example
 
@@ -31,12 +31,12 @@ include SlackWebApi
 
 client = Client.new(
   authorization_code_auth_credentials: AuthorizationCodeAuthCredentials.new(
-    o_auth_client_id: 'OAuthClientId',
-    o_auth_client_secret: 'OAuthClientSecret',
-    o_auth_redirect_uri: 'OAuthRedirectUri',
-    o_auth_scopes: [
-      OAuthScope::ADMIN,
-      OAuthScope::ADMIN_APPSREAD
+    oauth_client_id: 'OAuthClientId',
+    oauth_client_secret: 'OAuthClientSecret',
+    oauth_redirect_uri: 'OAuthRedirectUri',
+    oauth_scopes: [
+      OauthScope::ADMIN,
+      OauthScope::ADMIN_APPSREAD
     ]
   )
 )
@@ -78,11 +78,11 @@ After the server receives the code, it can exchange this for an *access token*. 
 begin
   token = client.slack_auth.fetch_token
   # update the cloned configuration with the token
-  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(o_auth_token: token)
+  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(oauth_token: token)
   config = client.config.clone_with(authorization_code_auth_credentials: authorization_code_auth_credentials)
   # re-instantiate the client with updated configuration
   client = SlackWebApi::Client.new(config: config)
-rescue OAuthProviderException => ex
+rescue OauthProviderException => ex
   # handle exception
 rescue ApiException => ex
   # handle exception
@@ -91,7 +91,7 @@ end
 
 ### Scopes
 
-Scopes enable your application to only request access to the resources it needs while enabling users to control the amount of access they grant to your application. Available scopes are defined in the [`OAuthScope`](../../doc/models/o-auth-scope.md) enumeration.
+Scopes enable your application to only request access to the resources it needs while enabling users to control the amount of access they grant to your application. Available scopes are defined in the [`OauthScope`](../../doc/models/oauth-scope.md) enumeration.
 
 | Scope Name | Description |
 |  --- | --- |
@@ -172,11 +172,11 @@ if client.auth.token_expired?
   begin
     token = client.auth.refresh_token
     # Update the cloned configuration with the token
-    authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(o_auth_token: token)
+    authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(oauth_token: token)
     config = client.config.clone_with(authorization_code_auth_credentials: authorization_code_auth_credentials)
     # Re-instantiate the client with updated configuration
     client = Client.new(config: config)
-  rescue OAuthProviderException => ex
+  rescue OauthProviderException => ex
     # handle exception
   rescue ApiException => ex
     # handle exception
@@ -192,7 +192,7 @@ It is recommended that you store the access token for reuse.
 
 ```ruby
 # store token
-save_token_to_database(client.config.authorization_code_auth_credentials.o_auth_token)
+save_token_to_database(client.config.authorization_code_auth_credentials.oauth_token)
 ```
 
 ### Creating a client from a stored token
@@ -204,7 +204,7 @@ To authorize a client using a stored access token, just set the access token in 
 token = load_token_from_database
 
 # Update the cloned configuration with the token
-  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(o_auth_token: token)
+  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(oauth_token: token)
 config = client.config.clone_with(authorization_code_auth_credentials: authorization_code_auth_credentials)
 # Re-instantiate the client with updated configuration
 client = Client.new(config: config)
@@ -236,7 +236,7 @@ client = Client.new
 previous_token = load_token_from_database
 if previous_token
   # restore previous access token and update the cloned configuration with the token
-  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(o_auth_token: previous_token)
+  authorization_code_auth_credentials = client.config.authorization_code_auth_credentials.clone_with(oauth_token: previous_token)
   config = client.config.clone_with(authorization_code_auth_credentials: authorization_code_auth_credentials)
   # re-instantiate the client with updated configuration
   client = SlackWebApi::Client.new(config: config)

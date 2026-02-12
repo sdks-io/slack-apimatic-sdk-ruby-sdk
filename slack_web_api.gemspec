@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'slack-apimatic-sdk-sdk'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.summary = 'SDKs for Slack'
   s.description = 'Slack API SDK'
   s.authors = ['Muhammad Rafay']

@@ -14,7 +14,7 @@ Schema for error response from auth.revoke method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error17`](../../doc/models/error-17.md) | Required | - |
+| `error` | [`AuthRevokeErrorEnum`](../../doc/models/auth-revoke-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -194,7 +194,7 @@ def reactions_list(token,
 | `full` | `TrueClass \| FalseClass` | Query, Optional | If true always return the complete reaction list. |
 | `count` | `Integer` | Query, Optional | - |
 | `page` | `Integer` | Query, Optional | - |
-| `cursor` | `String` | Query, Optional | Parameter for pagination. Set `cursor` equal to the `next_cursor` attribute returned by the previous request's `response_metadata`. This parameter is optional, but pagination is mandatory: the default value simply fetches the first "page" of the collection. See [pagination](/docs/pagination) for more details. |
+| `cursor` | `String` | Query, Optional | Parameter for pagination. Set `cursor` equal to the `next_cursor` attribute returned by the previous request's `response_metadata`. This parameter is optional, but pagination is mandatory: the default value simply fetches the first "page" of the collection. |
 | `limit` | `Integer` | Query, Optional | The maximum number of items to return. Fewer than the requested number of items may be returned, even if the end of the list hasn't been reached. |
 
 ## Requires scope

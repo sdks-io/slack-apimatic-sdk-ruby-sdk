@@ -10,7 +10,7 @@ module SlackWebApi
     private_constant :SKIP
 
     # TODO: Write general description for this method
-    # @return [Error5]
+    # @return [AdminConversationsGetConversationPrefsErrorEnum]
     attr_accessor :error
 
     # TODO: Write general description for this method

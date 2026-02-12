@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.create
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error2`](../../doc/models/error-2.md) | Required | - |
+| `error` | [`AdminConversationsCreateErrorEnum`](../../doc/models/admin-conversations-create-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

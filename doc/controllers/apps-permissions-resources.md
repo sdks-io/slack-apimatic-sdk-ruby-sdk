@@ -26,7 +26,7 @@ def apps_permissions_resources_list(token,
 | Parameter | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `token` | `String` | Query, Required | Authentication token. Requires scope: `none` |
-| `cursor` | `String` | Query, Optional | Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first "page" of the collection. See [pagination](/docs/pagination) for more detail. |
+| `cursor` | `String` | Query, Optional | Paginate through collections of data by setting the `cursor` parameter to a `next_cursor` attribute returned by a previous request's `response_metadata`. Default value fetches the first "page" of the collection. |
 | `limit` | `Integer` | Query, Optional | The maximum number of items to return. |
 
 ## Requires scope

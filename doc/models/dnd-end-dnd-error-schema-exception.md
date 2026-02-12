@@ -14,7 +14,7 @@ Schema for error response from dnd.endDnd method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error50`](../../doc/models/error-50.md) | Required | - |
+| `error` | [`DndEndDndErrorEnum`](../../doc/models/dnd-end-dnd-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

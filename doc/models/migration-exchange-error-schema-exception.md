@@ -14,7 +14,7 @@ Schema for error response from migration.exchange method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error61`](../../doc/models/error-61.md) | Required | - |
+| `error` | [`MigrationExchangeErrorEnum`](../../doc/models/migration-exchange-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

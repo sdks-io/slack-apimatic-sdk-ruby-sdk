@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.archive
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error`](../../doc/models/error.md) | Required | - |
+| `error` | [`AdminConversationsArchiveErrorEnum`](../../doc/models/admin-conversations-archive-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

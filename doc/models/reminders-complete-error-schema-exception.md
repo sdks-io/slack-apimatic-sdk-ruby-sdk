@@ -14,7 +14,7 @@ Schema for error response from reminders.complete method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error70`](../../doc/models/error-70.md) | Required | - |
+| `error` | [`RemindersCompleteErrorEnum`](../../doc/models/reminders-complete-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -55,7 +55,7 @@ module SlackWebApi
     # `cursor` equal to the `next_cursor` attribute returned by the previous
     # request's `response_metadata`. This parameter is optional, but pagination
     # is mandatory: the default value simply fetches the first "page" of the
-    # collection. See [pagination](/docs/pagination) for more details.
+    # collection.
     # @param [Integer] limit Optional parameter: The maximum number of items to
     # return. Fewer than the requested number of items may be returned, even if
     # the end of the list hasn't been reached.

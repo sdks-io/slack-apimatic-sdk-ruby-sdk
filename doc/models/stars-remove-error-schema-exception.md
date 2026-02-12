@@ -14,7 +14,7 @@ Schema for error response from stars.remove method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error77`](../../doc/models/error-77.md) | Required | - |
+| `error` | [`StarsRemoveErrorEnum`](../../doc/models/stars-remove-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

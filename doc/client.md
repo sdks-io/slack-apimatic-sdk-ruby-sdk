@@ -29,12 +29,12 @@ include SlackWebApi
 
 client = Client.new(
   authorization_code_auth_credentials: AuthorizationCodeAuthCredentials.new(
-    o_auth_client_id: 'OAuthClientId',
-    o_auth_client_secret: 'OAuthClientSecret',
-    o_auth_redirect_uri: 'OAuthRedirectUri',
-    o_auth_scopes: [
-      OAuthScope::ADMIN,
-      OAuthScope::ADMIN_APPSREAD
+    oauth_client_id: 'OAuthClientId',
+    oauth_client_secret: 'OAuthClientSecret',
+    oauth_redirect_uri: 'OAuthRedirectUri',
+    oauth_scopes: [
+      OauthScope::ADMIN,
+      OauthScope::ADMIN_APPSREAD
     ]
   ),
   environment: Environment::PRODUCTION,
@@ -125,5 +125,5 @@ The gateway for the SDK. This class acts as a factory for the Apis and also hold
 | users_profile | Gets UsersProfileApi |
 | views | Gets ViewsApi |
 | workflows | Gets WorkflowsApi |
-| o_auth_authorization | Gets OAuthAuthorizationApi |
+| oauth_authorization | Gets OauthAuthorizationApi |
 

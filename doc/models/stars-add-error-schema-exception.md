@@ -14,7 +14,7 @@ Schema for error response from stars.add method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error75`](../../doc/models/error-75.md) | Required | - |
+| `error` | [`StarsAddErrorEnum`](../../doc/models/stars-add-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

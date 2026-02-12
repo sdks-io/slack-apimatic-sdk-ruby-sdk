@@ -22,7 +22,7 @@ module SlackWebApi
     attr_accessor :dims
 
     # possibly DEV/QA only
-    # @return [Error98]
+    # @return [UsersSetPhotoErrorEnum]
     attr_accessor :error
 
     # possibly DEV/QA only

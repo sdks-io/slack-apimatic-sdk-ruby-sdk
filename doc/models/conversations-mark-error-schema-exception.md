@@ -14,7 +14,7 @@ Schema for error response from conversations.mark method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error41`](../../doc/models/error-41.md) | Required | - |
+| `error` | [`ConversationsMarkErrorEnum`](../../doc/models/conversations-mark-error-enum.md) | Required | - |
 | `needed` | `String` | Optional | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `provided` | `String` | Optional | - |

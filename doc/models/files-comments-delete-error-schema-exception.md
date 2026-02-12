@@ -14,7 +14,7 @@ Schema for error response files.comments.delete method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error54`](../../doc/models/error-54.md) | Required | - |
+| `error` | [`FilesCommentsDeleteErrorEnum`](../../doc/models/files-comments-delete-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -16,7 +16,7 @@ Schema for error response from users.setPhoto method
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
 | `debug_step` | `String` | Optional | possibly DEV/QA only |
 | `dims` | `String` | Optional | possibly DEV/QA only |
-| `error` | [`Error98`](../../doc/models/error-98.md) | Required | - |
+| `error` | [`UsersSetPhotoErrorEnum`](../../doc/models/users-set-photo-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `time_ident` | `Integer` | Optional | possibly DEV/QA only |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |

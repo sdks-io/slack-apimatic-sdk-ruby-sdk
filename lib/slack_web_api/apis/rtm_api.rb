@@ -11,11 +11,9 @@ module SlackWebApi
     # scope: `rtm:stream`
     # @param [TrueClass | FalseClass] batch_presence_aware Optional parameter:
     # Batch presence deliveries via subscription. Enabling changes the shape of
-    # `presence_change` events. See [batch
-    # presence](/docs/presence-and-status#batching).
+    # `presence_change` events.
     # @param [TrueClass | FalseClass] presence_sub Optional parameter: Only
-    # deliver presence events when requested by subscription. See [presence
-    # subscriptions](/docs/presence-and-status#subscriptions).
+    # deliver presence events when requested by subscription
     # @return [ApiResponse] Complete http response with raw body and status code.
     def rtm_connect(token,
                     batch_presence_aware: nil,

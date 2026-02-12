@@ -14,7 +14,7 @@ Schema for error response from users.setActive method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error97`](../../doc/models/error-97.md) | Required | - |
+| `error` | [`UsersSetActiveErrorEnum`](../../doc/models/users-set-active-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

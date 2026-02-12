@@ -14,7 +14,7 @@ Schema for error response from pins.list method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error63`](../../doc/models/error-63.md) | Required | - |
+| `error` | [`PinsListErrorEnum`](../../doc/models/pins-list-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

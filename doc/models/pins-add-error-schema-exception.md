@@ -14,7 +14,7 @@ Schema for error response from pins.add method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error62`](../../doc/models/error-62.md) | Required | - |
+| `error` | [`PinsAddErrorEnum`](../../doc/models/pins-add-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -14,7 +14,7 @@ Schema for error response from team.info method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error74`](../../doc/models/error-74.md) | Required | - |
+| `error` | [`RtmConnectErrorEnum`](../../doc/models/rtm-connect-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

@@ -1,0 +1,30 @@
+
+# Auth Revoke Error Enum
+
+## Enumeration
+
+`AuthRevokeErrorEnum`
+
+## Fields
+
+| Name |
+|  --- |
+| `NOT_AUTHED` |
+| `INVALID_AUTH` |
+| `ACCOUNT_INACTIVE` |
+| `TOKEN_REVOKED` |
+| `NO_PERMISSION` |
+| `ORG_LOGIN_REQUIRED` |
+| `INVALID_ARG_NAME` |
+| `INVALID_ARRAY_ARG` |
+| `INVALID_CHARSET` |
+| `INVALID_FORM_DATA` |
+| `INVALID_POST_TYPE` |
+| `MISSING_POST_TYPE` |
+| `TEAM_ADDED_TO_ORG` |
+| `INVALID_JSON` |
+| `JSON_NOT_OBJECT` |
+| `REQUEST_TIMEOUT` |
+| `UPGRADE_REQUIRED` |
+| `FATAL_ERROR` |
+

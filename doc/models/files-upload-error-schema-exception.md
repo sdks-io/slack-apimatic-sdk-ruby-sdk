@@ -14,7 +14,7 @@ Schema for error response files.upload method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error60`](../../doc/models/error-60.md) | Required | - |
+| `error` | [`FilesUploadErrorEnum`](../../doc/models/files-upload-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

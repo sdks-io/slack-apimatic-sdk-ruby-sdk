@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.getTeams
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error6`](../../doc/models/error-6.md) | Required | - |
+| `error` | [`AdminConversationsGetTeamsErrorEnum`](../../doc/models/admin-conversations-get-teams-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

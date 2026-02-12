@@ -14,7 +14,7 @@ Schema for error response from apps.permissions.resources.list method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error14`](../../doc/models/error-14.md) | Required | - |
+| `error` | [`AppsPermissionsResourcesListErrorEnum`](../../doc/models/apps-permissions-resources-list-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

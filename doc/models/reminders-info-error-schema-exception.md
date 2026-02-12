@@ -14,7 +14,7 @@ Schema for error response from reminders.info method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error71`](../../doc/models/error-71.md) | Required | - |
+| `error` | [`RemindersDeleteErrorEnum`](../../doc/models/reminders-delete-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

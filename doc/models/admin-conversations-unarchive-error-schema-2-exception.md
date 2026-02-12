@@ -13,7 +13,7 @@ Schema for error response from admin.conversations.rename
 
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
-| `error` | [`Error8`](../../doc/models/error-8.md) | Required | - |
+| `error` | [`AdminConversationsRenameErrorEnum`](../../doc/models/admin-conversations-rename-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 

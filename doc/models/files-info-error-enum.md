@@ -1,0 +1,30 @@
+
+# Files Info Error Enum
+
+## Enumeration
+
+`FilesInfoErrorEnum`
+
+## Fields
+
+| Name |
+|  --- |
+| `FILE_NOT_FOUND` |
+| `FILE_DELETED` |
+| `TIMEZONE_COUNT_FAILED` |
+| `NOT_AUTHED` |
+| `INVALID_AUTH` |
+| `ACCOUNT_INACTIVE` |
+| `NO_PERMISSION` |
+| `INVALID_ARG_NAME` |
+| `INVALID_ARRAY_ARG` |
+| `INVALID_CHARSET` |
+| `INVALID_FORM_DATA` |
+| `INVALID_POST_TYPE` |
+| `MISSING_POST_TYPE` |
+| `TEAM_ADDED_TO_ORG` |
+| `INVALID_JSON` |
+| `JSON_NOT_OBJECT` |
+| `REQUEST_TIMEOUT` |
+| `UPGRADE_REQUIRED` |
+

@@ -14,7 +14,7 @@ Schema for error response auth.test method
 | Name | Type | Tags | Description |
 |  --- | --- | --- | --- |
 | `callstack` | `String` | Optional | Note: PHP callstack is only visible in dev/qa |
-| `error` | [`Error18`](../../doc/models/error-18.md) | Required | - |
+| `error` | [`AuthTestErrorEnum`](../../doc/models/auth-test-error-enum.md) | Required | - |
 | `ok` | `String` | Required, Constant | **Value**: `'False'` |
 | `additional_properties` | `Hash[String, Object]` | Optional | - |
 
